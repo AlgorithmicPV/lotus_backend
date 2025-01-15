@@ -18,6 +18,7 @@ app = FastAPI()
 
 origins = [
     "https://lotus-frontend-gamma.vercel.app/",
+    "https://lotus-frontend-gamma.vercel.app"
 ]
 
 app.add_middleware(
