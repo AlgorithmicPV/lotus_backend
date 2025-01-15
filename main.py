@@ -17,7 +17,7 @@ client = OpenAI(
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173",
+    "https://lotus-frontend-gamma.vercel.app/",
 ]
 
 app.add_middleware(
