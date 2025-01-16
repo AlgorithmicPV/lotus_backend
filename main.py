@@ -29,6 +29,14 @@ app.add_middleware(
     allow_origins = origins,
 )
 
+class HomeMessage(BaseModel):
+    start_the_backend:str
+
+@app.post("/")
+async def start(message:HomeMessage):
+    start_msg = message.start_the_backend
+    print(start_msg)
+
 class ChatMessage(BaseModel):
     user_msg: str
 
