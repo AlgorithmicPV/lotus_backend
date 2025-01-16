@@ -30,11 +30,11 @@ app.add_middleware(
 )
 
 class HomeMessage(BaseModel):
-    start_the_backend:str
+    start:str
 
 @app.post("/")
 async def start(message:HomeMessage):
-    start_msg = message.start_the_backend
+    start_msg = message.start
     print(start_msg)
 
 class ChatMessage(BaseModel):
