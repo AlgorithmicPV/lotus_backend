@@ -36,6 +36,7 @@ class HomeMessage(BaseModel):
 async def start(message:HomeMessage):
     start_msg = message.start
     print(start_msg)
+    return{"started_msg":"started"}
 
 class ChatMessage(BaseModel):
     user_msg: str
